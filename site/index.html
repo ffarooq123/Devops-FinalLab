@@ -1,22 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Restaurant Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fatima's Restaurant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f5f0;
+            color: #333;
+        }
+
+        header {
+            background: #5b2c1f;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+            color: #f5ddd2;
+        }
+
+        nav {
+            background: #3d1d15;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .hero h2 {
+            color: #5b2c1f;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #666;
+        }
+
+        .menu {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .menu h2 {
+            text-align: center;
+            color: #5b2c1f;
+            margin-bottom: 25px;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .menu-item {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .menu-item h3 {
+            color: #5b2c1f;
+            margin-bottom: 8px;
+        }
+
+        .menu-item p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .price {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #c47a35;
+        }
+
+        .contact {
+            text-align: center;
+            margin: 40px 20px;
+            padding: 30px;
+            background: #efe2d5;
+            border-radius: 10px;
+        }
+
+        .contact h2 {
+            color: #5b2c1f;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #3d1d15;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .menu-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Fatima's Restaurant</h1>
+    <header>
+        <h1>Welcome to Fatima's Restaurant</h1>
+        <p>Delicious Food • Warm Atmosphere • Great Taste</p>
+    </header>
 
-    <h2>Our Menu</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <ul>
-        <li>Chicken Biryani</li>
-        <li>Chicken Karahi</li>
-        <li>Chicken Burger</li>
-        <li>Pizza</li>
-    </ul>
+    <section class="hero" id="home">
+        <h2>Fresh Food, Made With Love</h2>
+        <p>Enjoy our delicious selection of traditional and modern dishes.</p>
+    </section>
 
-    <p>Juw 34326</p>
+    <section class="menu" id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu-container">
+
+            <div class="menu-item">
+                <h3>Chicken Biryani</h3>
+                <p>Fragrant rice cooked with tender chicken and special spices.</p>
+                <span class="price">Rs. 450</span>
+            </div>
+
+            <div class="menu-item">
+                <h3>Chicken Karahi</h3>
+                <p>Traditional chicken karahi prepared with fresh tomatoes and spices.</p>
+                <span class="price">Rs. 850</span>
+            </div>
+
+            <div class="menu-item">
+                <h3>Chicken Burger</h3>
+                <p>Crispy chicken burger served with fresh vegetables and sauce.</p>
+                <span class="price">Rs. 400</span>
+            </div>
+
+            <div class="menu-item">
+                <h3>Pizza</h3>
+                <p>Freshly baked pizza topped with cheese and delicious toppings.</p>
+                <span class="price">Rs. 900</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Visit Us</h2>
+        <p>Come and enjoy a delicious meal with us!</p>
+        <p>📍 Karachi, Pakistan</p>
+    </section>
+
+    <footer>
+        <p>JUW 34326</p>
+        <p>© 2026 Fatima's Restaurant. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
